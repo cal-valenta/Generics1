@@ -1,6 +1,6 @@
 package com.valenta;
 
 public interface PushPop<T> {
-    T push();
+    void push(T t);
     T pop();
 }

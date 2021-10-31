@@ -1,6 +1,6 @@
 package com.valenta;
 
-public class Stack<T> implements PushPop {
+public class Stack<T> implements PushPop<T> {
     private int top_of_stack; // The index of the top-most element.
     private T[] stack; // this array holds the stack
 
@@ -27,7 +27,7 @@ public class Stack<T> implements PushPop {
     public T pop() {
         if(top_of_stack == 0) {
             System.out.println("Nothing to remove. Stack is empty");
-            return ;
+            return null;
         }
         System.out.println("Removed: " + stack[--top_of_stack]);
         return stack[top_of_stack];
