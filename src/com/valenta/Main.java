@@ -34,6 +34,7 @@ public class Main {
         stack.pop();
         stack.pop();
         stack.showStack();
+        stack.swap(1, 2);
     }
 
     public static <T extends Candy>void add(T item, Hand<T> hand) {

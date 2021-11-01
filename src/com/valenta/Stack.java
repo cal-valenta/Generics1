@@ -52,4 +52,11 @@ public class Stack<T> implements PushPop<T> {
             System.out.println();
         }
     }
+
+    public static <T> void swap(int first, int second){
+
+        temp = (T[]new Object [])
+        stack[first] = stack[second];
+        stack[second] = temp;
+    }
 }
